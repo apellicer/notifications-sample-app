@@ -13,6 +13,7 @@ angular.module('starter', ['ionic'])
       FCMPlugin.getToken(
         function(token){
           alert(token);
+          console.log(token);
         },
         function(err){
           console.log('error retrieving token: ' + err);
